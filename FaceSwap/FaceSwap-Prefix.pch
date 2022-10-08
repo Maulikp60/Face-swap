@@ -1,0 +1,24 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#ifdef __OBJC__
+    @import UIKit;
+    @import StoreKit;
+    @import Foundation;
+#define KeyIsUnlockedPro @"IsUnlockedPro"
+#define KeyIsUnlockedAll @"IsUnlockedAll"
+#define KeyIsUnlockedSkin @"IsUnlockedSkin"
+
+
+#define AdMobBannerUnitId @"ca-app-pub-6924646314674301/3926931476"
+
+#define Y_Banner (self.view.frame.size.height - 50.0f)
+#define AppiTunes_Link @"https://goo.gl/AWHEvG"
+#define AppLink @"itms-apps://itunes.apple.com/app/id1077456674"
+#define FacebookPage_Link @"http://www.facebook.com/FaceSwapApp"
+#define TwitterPage_Link @"https://twitter.com/freenewapps4u1"
+#define Instagram_Link @"https://www.instagram.com/faceswpappfun/?hl=en"
+#endif

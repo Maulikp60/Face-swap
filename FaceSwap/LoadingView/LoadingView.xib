@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1" customClass="LoadingView">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZLF-0i-5dN">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="vdz-3h-jVw">
+                    <rect key="frame" x="31" y="32" width="37" height="37"/>
+                </activityIndicatorView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connecting to server" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="7" preferredMaxLayoutWidth="90" translatesAutoresizingMaskIntoConstraints="NO" id="8FP-T6-zCP">
+                    <rect key="frame" x="5" y="59" width="90" height="33"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8FP-T6-zCP" firstAttribute="top" secondItem="vdz-3h-jVw" secondAttribute="bottom" constant="-10" id="7Gp-xT-0AN"/>
+                <constraint firstAttribute="trailing" secondItem="8FP-T6-zCP" secondAttribute="trailing" constant="5" id="Cq2-7p-XhW"/>
+                <constraint firstItem="vdz-3h-jVw" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" id="Fem-j5-vXK"/>
+                <constraint firstItem="8FP-T6-zCP" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="5" id="Sda-1j-lAu"/>
+                <constraint firstItem="vdz-3h-jVw" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="VSl-30-bao"/>
+                <constraint firstAttribute="bottom" secondItem="8FP-T6-zCP" secondAttribute="bottom" constant="8" id="dUL-Qa-N4E"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="activity" destination="vdz-3h-jVw" id="bS7-Bp-u4J"/>
+                <outlet property="lblLoading" destination="8FP-T6-zCP" id="6gx-Ar-UYr"/>
+            </connections>
+        </view>
+    </objects>
+</document>
